@@ -1,4 +1,4 @@
-## Logística dos correios
+## Logística dos Correios
 
   Projeto desenvolvido com os objetivos de implementar as funções CRUD e a geração de relatórios de maneira orientada a objetos utilizando uma interface JDBC (Java Database Connectivity) juntamente com as materias de Banco de Dados 1, Engenharia de Software 1 e Programação Orientada a Objetos com o propósito de integrar os conhecimentos das três em um só projeto.
 
