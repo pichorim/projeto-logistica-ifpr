@@ -23,6 +23,7 @@ public class Conexao{
                     case 1: //Select
                         rs = stmt.executeQuery("select * from " + tabela + ";");
                         rsmd = rs.getMetaData();
+
                         while(rs.next()){
                             for(int i = 1; i <= rsmd.getColumnCount(); i++){
                                 if(rs.getString(i) != null){
@@ -64,17 +65,19 @@ public class Conexao{
                         }
                         stmt.executeUpdate(query + "where " + rsmd.getColumnName(1) + " = " + sc.nextLine() + ";");
                         break;
-                        
                     case 4: //Delete
-                        stmt.executeUpdate("delete from " + tabela + " where cpf = '" + sc.nextLine() + "'");
+                        rs = stmt.executeQuery("select * from " + tabela + ";");
+                        rsmd = rs.getMetaData();
+                        stmt.executeUpdate("delete from " + tabela + " where " + rsmd.getColumnName(1) + " = '" + sc.nextLine() + "'");
                         break;
                     default:
                         break;
                 }
             }
             con.close();
-        } catch (Exception e) {
-            System.out.println("\nErro na Conexão\n");
+        } 
+        catch (Exception e) {
+            System.out.println("\nErro no Banco\n");
         }
     }
 }
