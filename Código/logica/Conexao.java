@@ -17,7 +17,7 @@ public class Conexao {
                 Class.forName("com.mysql.cj.jdbc.Driver");
                 con = DriverManager.getConnection("jdbc:mysql://localhost:3306/correios", "odair", "131619");
                 con.createStatement();
-                return stmt;
+                return con.createStatement();
         }
 
         catch(Exception e){
