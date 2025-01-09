@@ -1,3 +1,5 @@
+package conexao;
+
 import java.sql.*;
 import java.util.Scanner;
 
@@ -15,7 +17,7 @@ public class Conexao {
 
         try {
                 Class.forName("com.mysql.cj.jdbc.Driver");
-                con = DriverManager.getConnection("jdbc:mysql://localhost:3306/correios", "odair", "131619");
+                con = DriverManager.getConnection("jdbc:mysql://localhost:3306/correios", "root", "");
                 con.createStatement();
                 return con.createStatement();
         }
