@@ -6,7 +6,7 @@ public class PessoaModel {
     private String CPF;
     private String nome;
     private String sobrenome;
-    private Endereco endereco;
+    private Endereco endereco = new Endereco();
     private String email;
     private String telefone;
 

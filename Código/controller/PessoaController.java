@@ -22,7 +22,7 @@ public class PessoaController extends CRUD{
         valores[3] = pessoaV.pessoaM.getCEP();
         aux = pessoaV.pessoaM.getEndereco();
         for(int i = 4; i<10;i++){
-            valores[i] = aux[i-2];
+            valores[i] = aux[i-4];
         }
         valores[10] = pessoaV.pessoaM.getEmail();
         valores[11] = pessoaV.pessoaM.getTelefone();
@@ -36,11 +36,11 @@ public class PessoaController extends CRUD{
         valores[3] = pessoaV.pessoaM.getCEP();
         aux = pessoaV.pessoaM.getEndereco();
         for(int i = 4; i<10;i++){
-            valores[i] = aux[i-2];
+            valores[i] = aux[i-4];
         }
         valores[10] = pessoaV.pessoaM.getEmail();
         valores[11] = pessoaV.pessoaM.getTelefone();
-        inserir("pessoa", valores, 12);
+        update("pessoa", valores, 12);
     }
     public void visualizarPessoa(){
         select("pessoa");

@@ -59,7 +59,7 @@ public class Operacao extends Conexao{
                             pessoaC.atualizarPessoa();
                             break;
                         case "encomenda":
-                            pessoaC.atualizarPessoa();
+                            encomendaC.atualizarEncomenda();
                             break;
                         default:
                             System.out.println("\nTabela inexistente\n");

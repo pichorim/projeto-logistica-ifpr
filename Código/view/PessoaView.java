@@ -35,13 +35,13 @@ public class PessoaView {
         System.out.println("Número:");
         numero = sc.nextInt(); sc.nextLine();
         pessoaM.setEndereco(pais, estado, cidade, bairro, rua, numero);
-        System.out.println("");
+        System.out.println("Email:");
         pessoaM.setEmail(sc.nextLine());;
-        System.out.println("");
+        System.out.println("Telefone:");
         pessoaM.setTelefone(sc.next());
     }
     public void modificarPessoa(){
-        System.out.println("Insira as informações para adicionar um novo usuario.\nCPF:");
+        System.out.println("Insira as informações para modificar um usuário.\nCPF:");
         pessoaM.setCPF(sc.nextLine());
         System.out.println("Nome:");
         pessoaM.setNome(sc.nextLine());
@@ -62,9 +62,9 @@ public class PessoaView {
         System.out.println("Número:");
         numero = sc.nextInt(); sc.nextLine();
         pessoaM.setEndereco(pais, estado, cidade, bairro, rua, numero);
-        System.out.println("");
+        System.out.println("Email:");
         pessoaM.setEmail(sc.nextLine());;
-        System.out.println("");
+        System.out.println("Telefone:");
         pessoaM.setTelefone(sc.next());
     }
 }
